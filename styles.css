@@ -1,9 +1,56 @@
-tr,td{
-    border:1px;
+tr, td {
+    border: 1px;
     border-style: solid;
 }
-td{
+
+
+body {
+    font-family: Monospace, Monaco;
+    background-image: url('https://wallpapers.com/images/hd/good-background-41yxpu7jqynnkl6a.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start; 
+  }
+  
+
+td {
     height: 50px;
     width: 50px;
     background-color: white;
+}
+
+.styled-button {
+    display: flex;
+    flex-direction: row; /* Set the direction to row */
+    justify-content: center; /* Align items in the center horizontally */
+    margin-bottom: 50px;
+}
+
+.styled-button button, .styled-button select {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 40px; /* Add padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: 0.3s; /* Smooth transition on hover */
+}
+
+/* Change the color on hover */
+.styled-button button:hover, .styled-button select:hover {
+    background-color: #45a049; /* Darker green */
 }
