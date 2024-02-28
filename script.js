@@ -115,12 +115,30 @@ function addC() {
         let rows = document.querySelectorAll("tr");
         // Loop through each row and append a new cell to it
         rows.forEach(row => {
-            row.appendChild(createCell());
+            let cell = createCell(); // Create a new cell
+            row.appendChild(cell);
         });
     }
     // Increment the number of columns
     numCols++;
     console.log("Added a column. Rows:", numRows, "Columns:", numCols);
+
+    // Add event listener to the new cells
+    addCellEventListeners();
+}
+
+// Function to add event listeners to all cells
+function addCellEventListeners() {
+    // Get all cells in the grid
+    let cells = document.querySelectorAll("td");
+    // Loop through each cell and add event listener for coloring
+    cells.forEach(cell => {
+        cell.addEventListener("click", function () {
+            if (!this.style.backgroundColor) {
+                this.style.backgroundColor = colorSelected;
+            }
+        });
+    });
 }
 
 // Function to remove the last row from the grid
