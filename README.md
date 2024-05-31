@@ -1,4 +1,4 @@
 # grid-maker
 
 
-https://dulinag.github.io/Assignment-2/
+https://dulinag.github.io/grid-maker-app/
